@@ -15,35 +15,35 @@ module.exports = function (app) {
     var scoresResultsArr = [];
     var inputProfile = req.body;
     var bestMatchIndex;
-    
+
     profiles.inputProfile.name = inputProfile.name;
     profiles.inputProfile.photo = inputProfile.photo;
     profiles.inputProfile.scores = inputProfile.scores;
-    
+
     profiles.historyFigures.forEach(function (item) {
-      
+
       var scoresDifArr = 0;
-      
+
       item.scores.forEach(function (item, index) {
-        
+
         scoresDifArr += Math.abs(inputProfile.scores[index] - item);
-        
+
       })
-      
+
       scoresResultsArr.push(scoresDifArr)
-      
+
     })
-    
+
     var bestMatchScore = scoresResultsArr[0];
 
-    for (i = 1; i < scoresResultsArr.length -1; i++) {
+    for (i = 1; i < scoresResultsArr.length; i++) {
 
       if (bestMatchScore > scoresResultsArr[i]) {
-  
+
         bestMatchScore = scoresResultsArr[i];
         bestMatchIndex = i;
-  
-      } 
+
+      }
 
     }
 
