@@ -48,7 +48,8 @@ h4 {
 
 .chosen-select {
     width: 180px;
-    
+    border-radius: 3px;
+    border: solid 1px rgb(151, 151, 151);
 }
 
 .selectDropDown {
@@ -88,7 +89,7 @@ a {
 
 /* ====================================== MODAL */
 
-#match-img {
+#match-img, #your-img {
     width: 100%;
 }
 

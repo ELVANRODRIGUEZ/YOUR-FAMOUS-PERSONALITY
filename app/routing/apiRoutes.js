@@ -16,25 +16,28 @@ module.exports = function (app) {
     var inputProfile = req.body;
     var bestMatchIndex;
 
-    profiles.inputProfile.name = inputProfile.name;
+    profiles.inputProfile.name = inputProfile.name.toUpperCase();
     profiles.inputProfile.photo = inputProfile.photo;
     profiles.inputProfile.scores = inputProfile.scores;
 
     profiles.historyFigures.forEach(function (item) {
 
-      var scoresDifArr = 0;
+      var scoresDiff = 0;
 
       item.scores.forEach(function (item, index) {
 
-        scoresDifArr += Math.abs(inputProfile.scores[index] - item);
+        scoresDiff += Math.abs(inputProfile.scores[index] - item);
 
       })
 
-      scoresResultsArr.push(scoresDifArr)
+      scoresResultsArr.push(scoresDiff)
 
     })
 
     var bestMatchScore = scoresResultsArr[0];
+
+    // console.log(bestMatchScore);
+    // console.log(scoresResultsArr);
 
     for (i = 1; i < scoresResultsArr.length; i++) {
 
@@ -42,15 +45,23 @@ module.exports = function (app) {
 
         bestMatchScore = scoresResultsArr[i];
         bestMatchIndex = i;
+        
+      } else {
+
+        bestMatchIndex = 0;
 
       }
 
     }
 
-    console.log(bestMatchIndex);
-    console.log(scoresResultsArr);
+    // console.log(bestMatchIndex);
 
-    res.send(profiles.historyFigures[bestMatchIndex]);
+    var sentResponse = {
+      name: profiles.historyFigures[bestMatchIndex].name.toUpperCase(),
+      photo: profiles.historyFigures[bestMatchIndex].photo
+    }
+
+    res.send(sentResponse);
 
   })
 
