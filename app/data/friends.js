@@ -77,6 +77,86 @@ var historyFigures = [{
             3, // 9 Respectful of other's views - Respectful of truth.
             5 // 10 Social - Loner.
         ]
+    },
+    {
+        "name": "Adolf Hitler",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Hitler_portrait_crop.jpg",
+        "scores": [
+            5, // 1 Dreamer - Focused.
+            5, // 2 Experience - Innovation.
+            1, // 3 Calmed - Nervous.
+            1, // 4 Respectful of everyone bussines - Curious.
+            1, // 5 Tolerant - Grumpy.
+            5, // 6 Hard to emotionally relate - Empathic.
+            1, // 7 Factual - Emotional.
+            1, // 8 Realistic - Fantasious.
+            1, // 9 Respectful of other's views - Respectful of truth.
+            1 // 10 Social - Loner.
+        ]
+    }
+    {
+        "name": "Donald Trump",
+        "photo": "http://www.delightfulknowledge.com/wp-content/uploads/2016/11/trump-funny-face-628x356.jpg",
+        "scores": [
+            5, // 1 Dreamer - Focused.
+            3, // 2 Experience - Innovation.
+            1, // 3 Calmed - Nervous.
+            2, // 4 Respectful of everyone bussines - Curious.
+            1, // 5 Tolerant - Grumpy.
+            5, // 6 Hard to emotionally relate - Empathic.
+            1, // 7 Factual - Emotional.
+            1, // 8 Realistic - Fantasious.
+            4, // 9 Respectful of other's views - Respectful of truth.
+            5 // 10 Social - Loner.
+        ]
+    },
+    {
+        "name": "Rowan Atkinson",
+        "photo": "https://www.telegraph.co.uk/content/dam/films/2017/03/20/bean_trans_NvBQzQNjv4BqFNieKJvd-mi0anfcfhLYGg39oWbqNtszRryLrO6EuiQ.png?imwidth=450",
+        "scores": [
+            4, // 1 Dreamer - Focused.
+            2, // 2 Experience - Innovation.
+            2, // 3 Calmed - Nervous.
+            3, // 4 Respectful of everyone bussines - Curious.
+            4, // 5 Tolerant - Grumpy.
+            1, // 6 Hard to emotionally relate - Empathic.
+            2, // 7 Factual - Emotional.
+            2, // 8 Realistic - Fantasious.
+            4, // 9 Respectful of other's views - Respectful of truth.
+            5 // 10 Social - Loner.
+        ]
+    },
+    {
+        "name": "Juan Gabriel",
+        "photo": "https://www.tvynovelas.com/mx/wp-content/uploads/2018/09/juan-gabriel-home.imgo_-1-770x428.jpg",
+        "scores": [
+            4, // 1 Dreamer - Focused.
+            3, // 2 Experience - Innovation.
+            2, // 3 Calmed - Nervous.
+            5, // 4 Respectful of everyone bussines - Curious.
+            4, // 5 Tolerant - Grumpy.
+            2, // 6 Hard to emotionally relate - Empathic.
+            1, // 7 Factual - Emotional.
+            1, // 8 Realistic - Fantasious.
+            4, // 9 Respectful of other's views - Respectful of truth.
+            5 // 10 Social - Loner.
+        ]
+    },
+    {
+        "name": "Don Ramón",
+        "photo": "https://www.elpopular.pe/sites/default/files/styles/img_620x465/public/imagen/2019/04/19/Noticia-235414-don_ramon.jpg?itok=X82quSvh",
+        "scores": [
+            2, // 1 Dreamer - Focused.
+            4, // 2 Experience - Innovation.
+            2, // 3 Calmed - Nervous.
+            1, // 4 Respectful of everyone bussines - Curious.
+            1, // 5 Tolerant - Grumpy.
+            5, // 6 Hard to emotionally relate - Empathic.
+            2, // 7 Factual - Emotional.
+            2, // 8 Realistic - Fantasious.
+            3, // 9 Respectful of other's views - Respectful of truth.
+            1 // 10 Social - Loner.
+        ]
     }
 ];
 
