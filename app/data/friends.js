@@ -93,7 +93,7 @@ var historyFigures = [{
             1, // 9 Respectful of other's views - Respectful of truth.
             1 // 10 Social - Loner.
         ]
-    }
+    },
     {
         "name": "Donald Trump",
         "photo": "http://www.delightfulknowledge.com/wp-content/uploads/2016/11/trump-funny-face-628x356.jpg",
